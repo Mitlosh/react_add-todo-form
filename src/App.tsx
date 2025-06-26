@@ -10,6 +10,7 @@ import { useState } from 'react';
 function getUserById(userId: number) {
   return usersFromServer.find(user => user.id === userId) || null;
 }
+// App component
 
 export const App = () => {
   const [todoTitle, setTodoTitle] = useState('');
