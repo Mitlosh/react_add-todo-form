@@ -35,7 +35,7 @@ export const App = () => {
     }
 
     const newTodo: Todo = {
-      id: Math.max(...todosState.map(t => t.id)) + 1,
+      id: Math.max(0, ...todosState.map(t => t.id)) + 1,
       title: todoTitle,
       completed: false,
       userId: Number(selectedUserId),
